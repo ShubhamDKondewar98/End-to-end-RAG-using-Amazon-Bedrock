@@ -115,9 +115,7 @@ def main():
                llm = get_llm()
                st.write(get_llm_response(llm,faiss_index,  user_question))
 
-               
-
-
+       
 if __name__ == "__main__":
     main() 
 
