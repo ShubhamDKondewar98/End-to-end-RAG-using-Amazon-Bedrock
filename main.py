@@ -33,12 +33,26 @@ Assistant:"""
 
 
 #Bedrock client
+# bedrock = boto3.client(
+#     service_name = "bedrock-runtime", 
+#     region_name = "ap-south-1",
+#     aws_access_key_id = "",
+#     aws_secret_access_key = "",
+#     )
+
 bedrock = boto3.client(
     service_name = "bedrock-runtime", 
     region_name = region_name,
     aws_access_key_id = aws_access_key_id,
     aws_secret_access_key = aws_secret_access_key,
-    )
+    ) 
+
+#Bedrock client
+#bedrock =boto3.client(service_name = "bedrock-runtime" ,  region_name = "ap-south-1" ) 
+
+# get embeddings model from bedrock 
+
+
 
 
 #Get embeddings model from bedrock
